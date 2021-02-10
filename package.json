@@ -4,9 +4,9 @@
   "description": "A fun node build",
   "main": "app.js",
   "scripts": {
-    "start-dev": "nodemon app & browser-sync start --proxy 'localhost:5050' --files 'index.html' 'public'",
+    "start-dev": "nodemon app",
     "start": "node app",
-    "watch": "browser-sync start --proxy 'localhost:5050' --files '*.html' 'public'"
+    "start-ui": "browser-sync start --proxy 'localhost:5050' --files '*.html' 'public'"
   },
   "keywords": [],
   "author": "Sarthak Shah",
