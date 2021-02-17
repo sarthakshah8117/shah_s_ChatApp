@@ -8,7 +8,7 @@ import ChatMessage from "./components/ThemessageComponent.js";
     //messenger servce event handling -> incoming from the manager
     function setUserId({sID, message}) {
         // incomung connected event with data
-        debugger;
+        
         vm.socketID = sID;
     }
 
@@ -31,7 +31,9 @@ import ChatMessage from "./components/ThemessageComponent.js";
 
         methods: {
             dispatchMessage() {
-                socket.emit('chatmessage', {content: this.message, name: this.nickname || "Anonymous"})
+                socket.emit('chatmessage', {content: this.message, name: this.nickname || "Anonymous"});
+
+                this.message = ""; 
             }
 
         },

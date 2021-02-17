@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 
 
 app.get("/chat", (req, res) => {
-    console.log("test");
+    
     res.sendFile(path.join(__dirname, "chat.html"));
 });
 
