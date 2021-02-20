@@ -1,0 +1,92 @@
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $bg-color;
+    padding: 20px;
+    
+}
+
+
+
+.logo {
+    overflow: auto;
+    height: 400px;
+
+}
+
+.logo img {
+    float: left;
+    position: relative;
+    left: 50%;
+    top: 100px;
+    margin-left: -150px;
+    margin-top: -100px;
+    width: 300px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $bright-pink;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 25px;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+    
+
+    h2 {
+        margin-top: 100px;
+        font-family: $default-family;
+        font-size: 1.5rem;
+        color: $dark-pink;
+    }
+    h3 {
+        margin-top: -80px;
+        font-family: $default-family;
+        
+        color: $dark-pink;
+    }
+
+  .button {
+      background-color:  $bg-color;
+      border: none;
+      padding: 15px 50px;
+      margin-top: -80px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      color: $dark-pink;
+      border-top-right-radius: 2px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 2px;
+    font-family: $default-family;
+    
+  }
+
+  .button:hover{
+      font-weight: bold;
+      background-color: $dark-pink;
+      color: $main-text-color;
+  }
+
+}
+
+#form:hover {
+    box-shadow: 5px 5px $dark-pink;
+}
+
+
+
