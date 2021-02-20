@@ -19,8 +19,9 @@ import ChatMessage from "./components/ThemessageComponent.js";
     const vm = new Vue({
         data: {
             messages: [],
-            nickname: "",
-            username: "",
+            // nickname: "",
+            // username: "",
+            date: "",
             socketID: "",
             message: ""
         },
@@ -31,13 +32,18 @@ import ChatMessage from "./components/ThemessageComponent.js";
 
         methods: {
             dispatchMessage() {
-                socket.emit('chatmessage', {content: this.message, name: this.nickname || "Anonymous"});
+
+                var d = new Date();
+                var date = (d.getDate() + "/" + d.getMonth()+1)+ "/" + d.getFullYear() + "  ";
+                var time = date + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+                socket.emit('chatmessage', {content: this.message, name: this.usename, date: time || "Anonymous"});
 
                 this.message = ""; 
             }
 
         },
 
+        
         components: {
             newmessage: ChatMessage
         }

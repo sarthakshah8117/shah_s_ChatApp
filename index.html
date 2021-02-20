@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/main.css">
-    <title>My Awesome Chat App</title>
+    <title>Fancy Chat App</title>
 </head>
 <body>
-    <main>
-        <h1 class="hidden"> Super Sassy chat app</h1>
-        <h4>Add a username to join the chat</h4>
-        <h6>or not, to stealth post</h6>
+    <main  class="main">
+        <section class="logo">
+            <img src="images/logo.png" alt="logo">
+        </section>
+        <section id="form">
+            
+            <h2>A messaging platform that doesn't store any messages.</h2>
+            <h3>Chat with your friends Secretly</h3>
 
-        <input type="text" placeholder="your handle">
-        <input type="password" placeholder="password"> 
+        <!-- <input type="text" placeholder="Username......"> -->
+       
 
-        <input type="submit" value="JOIN">
+        <!-- <input type="submit" value="JOIN"> -->
 
-        <a href="/chat">to chat page</a>
+        <a href="/chat" @click="dispatchMessage" class="button">Join Chat</a>
+        </section>
     </main>
     
 </body>

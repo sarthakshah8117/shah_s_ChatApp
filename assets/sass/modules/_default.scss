@@ -16,21 +16,79 @@ body {
 
 a{
     display: block;
-    color: white;
+    color: $main-text-color;
     // text-decoration: none;
     margin: 1rem 0;;
 }
 
 .new-message {
-    padding: 10px;
-    background-color: blue;
-    color: white;
-    border-radius: 8px;
+    background: #FD59A9;
+    color: $main-text-color;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     float: left;
     clear: both;
+    
+
+    h4{
+        display: flex;
+        justify-content: flex-end;
+        background: #7D3854;
+        border-top-right-radius: 8px;
+        padding-right: 10px;
+    }
+
+    p:nth-child(2){
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+
+    p:nth-child(3){
+        display: flex;
+        justify-content: flex-end;
+        background: #7D3854;
+        border-bottom-right-radius: 8px;
+        padding-right: 10px;
+    }
 }
 
 .my-message {
-    background-color: green;
+    color: $main-text-color;
+    background-color: $bright-pink;
     float: right;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    h4{
+        width: 100%;
+        height: 25px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background: #7D5E6A;
+        border-top-left-radius: 8px;
+
+        font-size: 15px;
+        padding-left: 10px;
+    }
+
+    p:nth-child(2){
+        color: $main-text-color;
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    p:nth-child(3){
+        width: 100%;
+        height: 25px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background: #7D5E6A;
+        border-bottom-left-radius: 8px;
+        font-size: 15px;
+        padding-left: 10px  ;
+    }
 }
